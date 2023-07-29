@@ -23,3 +23,27 @@ def select_tables(tables: list):
             os.system(clear)
             print('Please select one avaliable table')
 
+
+def show_info():
+    # This function show useful info
+    
+    message = """
+    ======================================================
+    #                                                    #
+    #   Hello! Which table do you want to study today?   #
+    #                                                    #
+    #   1. Table One                                     #
+    #   2. Table Two                                     #
+    #                                                    #
+    #   3. Exit                                          #
+    #                                                    #
+    #   !Enter a number between 1 and 3                  #
+    #                                                    #
+    ======================================================
+
+    """
+
+    print(message)
+
+
+show_info()
