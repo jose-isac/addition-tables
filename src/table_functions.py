@@ -44,6 +44,3 @@ def show_info():
     """
 
     print(message)
-
-
-show_info()
