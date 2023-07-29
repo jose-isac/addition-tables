@@ -23,6 +23,7 @@ table1 = """
     #           9 + 3 = 12                               #
     #                                                    #
     ======================================================
+    Go back to main menu(y/n)?
 
     """ 
 
@@ -45,9 +46,15 @@ table2 = """
     #           5 + 8 = 13                               #
     #                                                    #
     ======================================================
+    Go back to main menu(y/n)?
 
     """
 addition_tables = [table1, table2]
 
-for table in addition_tables:
-    print(table)
+# Run
+
+program_active = True
+
+while program_active:
+    show_info()
+    select_tables(addition_tables)

@@ -13,11 +13,31 @@ def select_tables(tables: list):
     match choose:
         case '1':
             os.system(clear)
-            print(tables[0])
+            while True:
+                print(tables[0])
+                go_back = input()
+                if go_back == 'y':
+                    os.system(clear)
+                    break
+                else:
+                    os.system(clear)
+                    continue
 
         case '2':
             os.system(clear)
-            print(tables[1])
+            while True:
+                print(tables[1])
+                go_back = input()
+                if go_back == 'y':
+                    os.system(clear)
+                    break
+                else:
+                    os.system(clear)
+                    continue
+
+        case '3':
+            print("\nSee you later!\n")
+            exit()
 
         case _:
             os.system(clear)
@@ -42,5 +62,4 @@ def show_info():
     ======================================================
 
     """
-
     print(message)
