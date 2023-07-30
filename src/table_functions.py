@@ -3,12 +3,12 @@
 
 import os # Only for clear the terminal screen and add compatibility for windows
 
+opr_system = os.name
+clear = 'clear' if opr_system == 'posix' else 'cls'
+
 def select_tables(tables: list):
     # This functions let the user choose which table he wants to see
     
-    opr_system = os.name
-    clear = 'clear' if opr_system == 'posix' else 'cls'
-
     choose = input()
     match choose:
         case '1':
@@ -46,7 +46,6 @@ def select_tables(tables: list):
 
 def show_info():
     # This function show useful info
-    
     message = """
     ======================================================
     #                                                    #
