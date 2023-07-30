@@ -4,7 +4,7 @@
 import os # Only for clear the terminal screen and add compatibility for windows
 
 opr_system = os.name
-clear = 'clear' if opr_system == 'posix' else 'cls'
+clear = 'cls' if opr_system == 'nt' else 'clear'
 
 def select_tables(tables: list):
     # This functions let the user choose which table he wants to see
