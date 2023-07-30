@@ -1,10 +1,19 @@
 # -*- coding: utf-8 -*-
 # There is two functions: one to print the tables and one to prompt the user
 
-import os # Only for clear the terminal screen and add compatibility for windows
+# Only for clear the terminal screen and add compatibility for windows
+import os 
 
-opr_system = os.name
-clear = 'cls' if opr_system == 'nt' else 'clear'
+
+def clear():
+    # This function clear the terminal screen depending of the operating system
+
+    opr_system = os.name
+
+    if opr_system == 'nt': #windows
+        os.system('cls')
+    else:                  #linux or macos
+        os.system('clear')
 
 def select_tables(tables: list):
     # This functions let the user choose which table he wants to see
@@ -12,27 +21,27 @@ def select_tables(tables: list):
     choose = input()
     match choose:
         case '1':
-            os.system(clear)
+            clear()
             while True:
                 print(tables[0])
                 go_back = input()
-                if go_back == 'y':
-                    os.system(clear)
+                if go_back == 'r':
+                    clear()
                     break
                 else:
-                    os.system(clear)
+                    clear()
                     continue
 
         case '2':
-            os.system(clear)
+            clear()
             while True:
                 print(tables[1])
                 go_back = input()
-                if go_back == 'y':
-                    os.system(clear)
+                if go_back == 'r':
+                    clear()
                     break
                 else:
-                    os.system(clear)
+                    clear()
                     continue
 
         case '3':
@@ -40,12 +49,13 @@ def select_tables(tables: list):
             exit()
 
         case _:
-            os.system(clear)
+            clear()
             print('Please select one avaliable table')
 
 
 def show_info():
     # This function show useful info
+    clear()
     message = """
     ======================================================
     #                                                    #

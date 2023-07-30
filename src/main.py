@@ -23,7 +23,7 @@ table1 = """
     #           9 + 3 = 12                               #
     #                                                    #
     ======================================================
-    Go back to main menu(y/n)?
+    * Enter "r" to return to the main menu.
 
     """ 
 
@@ -46,7 +46,7 @@ table2 = """
     #           5 + 8 = 13                               #
     #                                                    #
     ======================================================
-    Go back to main menu(y/n)?
+    * Enter "r" to return to the main menu.
 
     """
 addition_tables = [table1, table2]
