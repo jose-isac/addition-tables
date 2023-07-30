@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# There is two functions: one to print the tables and one to prompt the user
+# There is three functions: one to print the tables, one to prompt the user
+# and one to clear the terminal screen
 
 # Only for clear the terminal screen and add compatibility for windows
 import os 
